@@ -4,16 +4,16 @@
 
 This repository documents my class work and projects done for *__CPS342__*
 
-	1. __Personal Information:__
+1. __Personal Information:__
 		
-		Name: *Cameron Arthurs*
+	Name: *Cameron Arthurs*
 
-		Major: *Computer Science*
+	Major: *Computer Science*
 
-		ID:[*N03352765*](https://github.com/cameron-arthurs)
+	ID:[*N03352765*](https://github.com/cameron-arthurs)
 
-		Year: *Senior*
+	Year: *Senior*
 
-	2. __Class Start Date:__ Jan 22, 2020
+2. __Class Start Date:__ Jan 22, 2020
 
-	3. __Class End Date:__ May 15, 2020
+3. __Class End Date:__ May 15, 2020
