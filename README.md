@@ -10,7 +10,7 @@ This repository documents my class work and projects done for *__CPS342__*
 
 	Major: *Computer Science*
 
-	ID:[*N03352765*](https://github.com/cameron-arthurs)
+	ID: [*N03352765*](https://github.com/cameron-arthurs)
 
 	Year: *Senior*
 
