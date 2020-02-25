@@ -1,3 +1,19 @@
-# EL2020
+![New Paltz](https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg)
 
-Hello, and welcome to Mr. Simons's repository for the spring 2020 embedded linux class.  This repository will be used as an example of ways to maintain a code base while working on a project. This is **NOT** the Embedded Linux class itself.  That is hosted on Google Classroom.  Please contact "simonsj [at] newpaltz [dot] edu" if you are in the class, but do not have the classroom code.
+# Spring 2020 Embedded Linux Class
+
+This repository documents my class work and projects done for *__CPS342__*
+
+	1. __Personal Information:__
+		
+		Name: *Cameron Arthurs*
+
+		Major: *Computer Science*
+
+		ID:[*N03352765*](https://github.com/cameron-arthurs)
+
+		Year: *Senior*
+
+	2. __Class Start Date:__ Jan 22, 2020
+
+	3. __Class End Date:__ May 15, 2020
