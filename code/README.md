@@ -6,8 +6,8 @@
 
 	Valid arguments:
  
-		*daynumber* : echos the integer value for the current day of the year.
+		daynumber : echos the integer value for the current day of the year.
 		
-		*weekday* : echos the current day of the week.
+		weekday : echos the current day of the week.
 
-		*christmas* : echos the remaining number of days until christmas.
+		christmas : echos the remaining number of days until christmas.
