@@ -1,5 +1,4 @@
 #!/bin/bash
-
 var1="$1"
 if [ $var1 = daynumber ]
 then
