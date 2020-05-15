@@ -13,7 +13,7 @@ import sqlite3 as sql
 import json
 
 #Globals
-con = sql.connect('tempLog.db')
+con = sql.connect('weatherLog.db')
 cur = con.cursor()
 app = Flask(__name__)
 
@@ -24,26 +24,15 @@ def index():
 @app.route("/sqlData")
 def chartData():
 	con.row_factory = sql.Row
-	cur.execute("SELECT Date, Temperature FROM tempLog WHERE Temperature > 60")
+	cur.execute("SELECT Date, Temperature FROM weatherLog WHERE Temperature > 60, Humidity, Pressure")
 	dataset = cur.fetchall()
 	print (dataset)
 	chartData = []
 	for row in dataset:
-		chartData.append({"Date": row[0], "Temperature": float(row[1])})
+		chartData.append({"Date": row[0], "Temperature": float(row[1]), "Humidity": int(row[2]), "Pressure": int(row[3])})
 	return Response(json.dumps(chartData), mimetype='application/json')
 
-@app.route("/blinky")
-def blink():
-	GPIO.setmode(GPIO.BCM)
-	GPIO.setup(27,GPIO.OUT)
-	GPIO.output(27,True)
-	time.sleep(1)
-	GPIO.output(27,False)
-	time.sleep(1)
-	GPIO.output(27,True)
-	time.sleep(1)
-	return "blink success"
-	GPIO.cleanup()
+
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=2020, debug=True)

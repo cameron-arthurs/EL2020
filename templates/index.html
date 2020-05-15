@@ -15,10 +15,12 @@
 
 	<body onload="go()">
 
+		<h1>Weather Logging System</h1>
+		<h2>Final Project for Embedded Linux Spring 2020</h2>
+		<h3>By Cameron Arthurs</h3>
 		<center>
 			<div id="gauge" style="width: 250px; height: 250px"></div>
 			<div id="curve_chart" style="width: 1200px; height: 1200px"></div>
-			<button onclick="blink()" id="blinky_button">click for fun</button>
 		</center>
 
 		<script type='text/javascript'>
@@ -46,7 +48,7 @@
 				$.getJSON('/sqlData', function(chartJSON) {
 					console.log(chartJSON);
 					for (i = 0; i < chartJSON.length; i++){
-						chartData.push([new Date(chartJSON[i].Date), chartJSON[i].Temperature]);
+						chartData.push([new Date(chartJSON[i].Date), chartJSON[i].Temperature], chartJSON[i]);
 					};
 					drawGauge();
 					drawChart();
@@ -78,10 +80,12 @@
 						var gdata = new google.visualization.DataTable();
 						gdata.addColumn('date', 'Date');
 						gdata.addColumn('number', 'Temperature');
+						gdata.addColumn('number', 'Humidity');
+						gdata.addColumn('number', 'Pressure');
 						gdata.addRows(chartData);
 
 						var options = {
-	            			title: 'Temperture Log',
+	            			title: 'Weather Log',
 	            			curveType: 'function',
 	            			legend: { position: 'bottom' }
 	        			};
@@ -89,12 +93,6 @@
 	        			chart.draw(gdata, options);
 	        			chartTime = new Date();
 			}
-
-		function blink(){
-			$.ajax({
-				url:"/blinky",
-			});
-		}
 
 		</script>
 
