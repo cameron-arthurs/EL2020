@@ -1,19 +1,7 @@
-![New Paltz](https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg)
 
-# Spring 2020 Embedded Linux Class
+# Weather Logging System Final Project
 
-This repository documents my class work and projects done for *__CPS342__*
-
-1. __Personal Information:__
-		
-	Name: *Cameron Arthurs*
-
-	Major: *Computer Science*
-
-	ID: [*N03352765*](https://github.com/cameron-arthurs)
-
-	Year: *Senior*
-
-2. __Class Start Date:__ Jan 22, 2020
-
-3. __Class End Date:__ May 15, 2020
+This project utilizes various sensors from the Smart Home IOT Sensor Kit to gather data on the weather nearby.
+Then, the collected data is presented by a flask served website in which the data is formatted into easily readable charts.
+This is all done by connecting the DHT11 Temperature & Humidity sensor, the BMP180 Digital Barometric Pressure Sensor module,
+and the Water sensor Module to the GPIO board which is connected to and powered by the Pi. 
